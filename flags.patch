@@ -1,0 +1,10 @@
+--- hyprutils-0.2.1/CMakeLists.txt.orig	2024-07-27 18:47:29.000000000 +0200
++++ hyprutils-0.2.1/CMakeLists.txt	2024-07-28 18:05:45.130800953 +0200
+@@ -24,7 +24,6 @@
+   message(STATUS "Configuring hyprutils in Debug")
+   add_compile_definitions(HYPRLAND_DEBUG)
+ else()
+-  add_compile_options(-O3)
+   message(STATUS "Configuring hyprutils in Release")
+ endif()
+ 
