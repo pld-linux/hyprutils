@@ -1,12 +1,12 @@
 Summary:	Hyprland utilities library used across the ecosystem
 Name:		hyprutils
-Version:	0.7.1
+Version:	0.8.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/hyprwm/hyprutils/releases
 Source0:	https://github.com/hyprwm/hyprutils/archive/v%{version}/%{name}-v%{version}.tar.gz
-# Source0-md5:	3ee1e0d2ec43e7c05b284bc5e8c0c840
+# Source0-md5:	294968a52b1ae960dadb4839061ee429
 Patch0:		flags.patch
 URL:		https://hyprland.org/
 BuildRequires:	cmake >= 3.19
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE README.md
 %attr(755,root,root) %{_libdir}/libhyprutils.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libhyprutils.so.6
+%attr(755,root,root) %ghost %{_libdir}/libhyprutils.so.7
 
 %files devel
 %defattr(644,root,root,755)
